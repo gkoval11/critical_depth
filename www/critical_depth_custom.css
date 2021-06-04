@@ -1,0 +1,14 @@
+/*add buffer on the top of the page so navbar doesn't overlap text*/
+body {
+  padding-top: 70px;
+}
+
+/*change body text size*/
+body {
+  font-size: 18px;
+}
+
+/*change header colors*/
+h3 {
+  color: CornflowerBlue;
+}
