@@ -45,4 +45,4 @@ This app is also currently being hosted on the shinyapps.io website and is avail
 
  [Critical Depth Web App](https://gkoval11.shinyapps.io/Critical_Depth/)
 
- If the app is not currently active, please contact it's creator [Gammon Koval](mailto:gkoval@mlml.calstate.edu) and the host instance will be restarted for you to access.
+ If the app is not currently active, please contact it's creator [Gammon Koval](mailto:gkoval@csumb.edu) and the host instance will be restarted for you to access.
