@@ -89,7 +89,7 @@ navbarPage(
                   label = "Mixed Layer Depth",
                   min = 10,
                   max = 15,
-                  value = 10, 
+                  value = 14, 
                   step = 0.2,
                   round = FALSE,
                   ticks = FALSE),
@@ -100,17 +100,23 @@ navbarPage(
         br(),
         br(),
         h3("Sverdrups' Assumptions", style = "color: CornflowerBlue;"),
-        HTML("Sverdrup defined the critical depth as the depth of the mixing layer where the phytoplankton
-        loss was equal to the production. Sverdrup's Critical Depth Hypothesis is illustrated 
-        in Figure 5 below. There are several critical assumptions associated with the Critical Depth 
-        Hypothesis: <ul>
+        HTML("Sverdrup defined the critical depth as the depth of the mixing layer where the vertically 
+        integrated production and respiration are equal. This is also when the net growth rate of the 
+        phytoplankton is equal to zero. Light is also a factor since photosynthesis is how phytoplankton
+        populations grow. The <b>compensation depth</b> is the depth at which the rate of photosynthesis 
+        balances the rate of respiration and is influenced by how deep the sunlight penetrates. Sverdrup's
+        Critical Depth Hypothesis is illustrated in Figure 5 below. There are several critical assumptions
+        associated with the Critical Depth Hypothesis: <ul>
              <li>Phytoplankton growth is limited by light in the winter.</li>
              <li>There is an abundance of nutrients before the bloom starts.</li>
              <li>There is not an abundance of grazing on the phytoplankton by predators.</li>
             </ul>"),
         p("These are large assumptions that have been addressed in recent theories on when the spring
-          bloom begins in the North Atlantic. Click on the other tabs at the top of the page to learn about how
-          these other hypotheses predict when the spring bloom occurs."),
+          bloom begins in the North Atlantic. It's also worth noting that the theroy assumes the processes 
+          are one-dimensional and only vary with depth. In the ocean, there are many horizontal process that 
+          mix the water and would create a more complex intersection of the boundaries. Click on the other 
+          tabs at the top of the page to learn about how these other hypotheses predict when the spring 
+          bloom occurs."),
         #add figure from Behrenfeld and Boss 2014
         img(src = "critical_depth_hypothesis.JPG", width = "70%"),
         br(),
@@ -155,13 +161,14 @@ navbarPage(
       titlePanel("Huisman's The Critical Turbulence Hypothesis"),
       mainPanel(
         HTML("The <b>Critical Turbulence Hypothesis</b> deals with the assumption from the Critical Depth 
-          Hypothesis that mixing within the mixed layer was constant, which we know isn't accurate 
+          Hypothesis that mixing within the mixed layer was constant with depth, which we know isn't accurate 
           physics. Frequently there will be turbulent mixing that stirs up the mixed layer, but when 
           this turbulent mixing is only moderate or weak, it allows phytoplankton at the surface to 
           photosynthesize and reproduce rapidly. This hypothesis proposes that the spring bloom will 
           occur when the mixed layer depth is at its maximum because the convective mixing ends and there
           is a net heat flux at the surface and thus the bloom is initiated. Figure 7 illustrates
           this process."),
+        br(),
         #add figure from Beherenfeld and Boss 2014
         img(src = "critical_turbulence_hypothesis.JPG", width = "70%"),
         br(),
